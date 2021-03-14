@@ -146,6 +146,15 @@ We now use the which min to see what is the best amount of variables to use
 which.min(val.errors)
 ```
 
+```{r}
+predict.regsubsets=function (object , newdata ,id ,...){
+form=as.formula (object$call [[2]])
+mat=model.matrix(form ,newdata )
+coefi=coef(object ,id=id)
+xvars=names(coefi)
+mat[,xvars]%*%coefi
+}
+```
 With the new variables test the new coefficients to see the new variables interaction
 with the model
 
