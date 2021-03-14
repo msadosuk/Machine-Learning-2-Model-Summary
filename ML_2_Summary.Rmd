@@ -40,7 +40,7 @@ adding the most significant variables until a pre-specified stopping rule is rea
 
 For backward stepwise selection: it begins with a model that contains all variables under
 consideration, then starts removing the least significant variables until a 
-pre-specified stopping rule is reached or until no vraible is left in the model
+pre-specified stopping rule is reached or until no varible is left in the model
 
 
 ### When to employ this method/model:
